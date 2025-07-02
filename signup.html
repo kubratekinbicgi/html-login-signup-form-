@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background: #f9f9f9;
+        }
+      
+        h1 {
+          text-align: center;
+        }
+      
+        form {
+          max-width: 300px;
+          margin: 20px auto;
+          padding: 20px;
+          background: #fff;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+        }
+      
+        div {
+          margin-bottom: 15px;
+        }
+      
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+      
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          width: 100%;
+          padding: 8px;
+          box-sizing: border-box;
+        }
+      
+        button {
+          width: 100%;
+          padding: 10px;
+          background: #257a39; 
+          color: #fff;
+          border: none;
+          border-radius: 7px;
+          cursor: pointer;
+        }
+      
+        button:hover {
+          background: #218838;
+        }
+      
+        p {
+          text-align: center;
+        }
+      
+        a {
+            text-decoration: none;
+            color: #416d9c;
+        }
+      
+        a:hover {
+          text-decoration: underline;
+        }
+      </style>
+</head>
+<body>
+    <h1>Hesap Oluştur</h1>
+    <form action="">
+        <div>
+            <label for="fullName">Ad Soyad:</label>
+            <input type="text"  id="fullName" name="fullName" placeholder="Adınızı ve Soyadınızı girin" required>
+        </div>
+        <div>
+            <label for="signup-email">E-posta:</label>
+            <input type="email" id="singup-email" name="singup-email" placeholder="E-postanızı girin" required>
+        </div>
+        <div>
+            <label for="signup-password">Şifre:</label>
+            <input type="password" id="singup-password" name="singup-password" placeholder="Şifrenizi girin" required>
+        </div>
+        <div>
+            <label for="confirm-password">Şifreyi Onayla:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Şifrenizi tekrar girin" required>
+        </div>
+        <button type="submit">Kayıt Ol</button>
+    </form>
+    <p>Zaten hesabınız var mı? <a href="login.html" style="text-decoration: none;"> Giriş Yap</a></p>
+</body>
+</html>
